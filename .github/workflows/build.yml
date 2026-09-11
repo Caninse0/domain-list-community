@@ -48,6 +48,7 @@ jobs:
 
       - name: Generate Zip
         run: |
+          cp dlc.dat geosite.dat
           zip -9 dlc.dat.zip dlc.dat
           sha256sum dlc.dat.zip > dlc.dat.zip.sha256sum
 
@@ -62,13 +63,13 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -b release
-          git add *.txt *.sha256sum dlc.dat dlc.dat_plain.yml dlc.dat.zip dlc.dat.xz
+          git add *.txt *.sha256sum dlc.dat dlc.dat_plain.yml dlc.dat.zip dlc.dat.xz geosite.dat
           git commit -m "${{ env.RELEASE_NAME }}"
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f -u origin release
 
       - name: Release and upload assets
         run: |
-          gh release create ${{ env.TAG_NAME }} --target ${{ github.sha }} --generate-notes --latest --title ${{ env.RELEASE_NAME }} ./dlc.dat ./dlc.dat.* ./dlc.dat_plain.yml ./dlc.dat_plain.yml.*
+          gh release create ${{ env.TAG_NAME }} --target ${{ github.sha }} --generate-notes --latest --title ${{ env.RELEASE_NAME }} ./geosite.dat ./dlc.dat ./dlc.dat.* ./dlc.dat_plain.yml ./dlc.dat_plain.yml.*
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
