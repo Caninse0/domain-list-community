@@ -25,6 +25,8 @@ include:category-social-media-cn
 include:getui
 include:growingio
 include:jiguang
+# 乐鑫
+include:espressif
 
 ## LinkFlow
 linkflowtech.com
@@ -45,9 +47,9 @@ include:category-httpdns-cn
 # Bank & Finance & Insurance & Securities
 include:category-bank-cn
 include:category-securities-cn
-include:eastmoney @-!cn
+include:eastmoney
 include:everbright
-include:pingan @-!cn
+include:pingan
 include:taikang
 
 ## 太平洋保险
@@ -185,11 +187,11 @@ youliancloud.cn
 
 # E-commerce
 include:58tongcheng
-include:ctrip @-!cn
+include:ctrip
 include:dangdang
-include:dewu @-!cn
+include:dewu
 include:dongjiao
-include:jd @-!cn
+include:jd
 include:lianjia
 include:meituan
 include:miaomiaozhe
@@ -435,7 +437,7 @@ zgjx.cn
 
 # Public transportation
 ## 中国国际航空
-include:airchina @-!cn
+include:airchina
 ## 海南航空
 include:hainanairlines
 ## 长安航空
@@ -796,14 +798,14 @@ xinhuashudian.com
 # Tech companies & Orginations
 include:aisiku # 北京艾斯酷科技有限公司
 include:akiko # 秋子酱科技
-include:alibaba @-!cn
-include:anker @-!cn
-include:auxgroup @-!cn # 奥克斯集团
+include:alibaba
+include:anker
+include:auxgroup # 奥克斯集团
 include:baidu
 include:beisen
 include:bluepoch
-include:bytedance @-!cn
-include:didi @-!cn
+include:bytedance
+include:didi
 include:dingdatech # 叮哒出行(杭州金通互联科技有限公司)
 include:dji
 include:focuschina # 焦点科技
@@ -812,7 +814,7 @@ include:haier
 include:hikvision
 include:hisense
 include:honor
-include:huawei @-!cn
+include:huawei
 include:hupun # 杭州湖畔网络技术有限公司
 include:iflytek
 include:ishumei # 北京数美时代科技有限公司
@@ -823,18 +825,18 @@ include:lenovo
 include:meizu
 include:midea
 include:narwal # 云鲸科技
-include:netease @-!cn
-include:oppo @-!cn
+include:netease
+include:oppo
 include:qianxin
 include:qihoo360
 include:sumkoo #北京尚古创新科技有限公司
 include:tcl
-include:tencent @-!cn
+include:tencent
 include:trustasia
 include:tongfang
-include:vivo @-!cn
+include:vivo
 include:wanmei
-include:xiaomi @-!cn
+include:xiaomi
 include:xunlei
 include:youquan # 祐全科技
 include:yuanbei # 上海圆贝信息科技有限公司
@@ -934,14 +936,14 @@ xpccdn.com
 
 # Telecommunication
 include:chinabroadnet
-include:chinamobile @-!cn
-include:chinatelecom @-!cn
+include:chinamobile
+include:chinatelecom
 include:chinatower
-include:chinaunicom @-!cn
+include:chinaunicom
 
 # 在线工具
 ## IPIP ip地理位置数据库
-include:ipip @-!cn
+include:ipip
 
 ## 白描
 baimiao.tech
